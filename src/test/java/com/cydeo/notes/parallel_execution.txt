@@ -1,0 +1,2 @@
+the link:
+https://cucumber.io/docs/guides/parallel-execution/
