@@ -9,8 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class WOrderPage {
 
     @FindBy(xpath = "//h2[normalize-space(.)='Order']")

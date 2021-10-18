@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class LibraryLogin_StepDef {
 
@@ -31,7 +31,7 @@ public class LibraryLogin_StepDef {
     public void userShouldBeAtDashboardPage() {
 
         BrowserUtil.waitFor(2);
-        assertTrue(Driver.getDriver().getTitle().equals("Library"));
+        assertEquals("Library", Driver.getDriver().getTitle());
     }
 
 

@@ -47,12 +47,12 @@
 
         <!--Junit dependency/-->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.0</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter</artifactId>-->
+<!--            <version>5.8.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
@@ -87,14 +87,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
- <!--  this is where we can tell sure fire plugin to run test in certain wai-->
+ <!--  this is where we can tell sure fire plugin to run test in certain way    -->
                     <testFailureIgnore>true</testFailureIgnore>
                     <runOrder>Alphabetical</runOrder>
-<!--                    <parallel>methods</parallel>        -->
-<!--                    <useUnlimitedThreads>true</useUnlimitedThreads>    -->
+                    <parallel>methods</parallel>
+                    <useUnlimitedThreads>true</useUnlimitedThreads>
                     <includes>
                         <include>**/*TestRunner.java</include>
-                        <!-- <include>**/*FailedTestRunner.java</include> -->
+<!--                         <include>**/*FailedTestRunner.java</include>-->
                     </includes>
                 </configuration>
             </plugin>

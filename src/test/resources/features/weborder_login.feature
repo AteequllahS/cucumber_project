@@ -1,4 +1,4 @@
-
+@ui
 Feature: web order app login
   as a user, I should be able to login to web order app
 
