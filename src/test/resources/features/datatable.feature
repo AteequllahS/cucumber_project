@@ -1,3 +1,4 @@
+@ui
 Feature: Demonstrating the data table feature of cucumber
 
   Cucumber provide ability to organize repeating steps with different data
