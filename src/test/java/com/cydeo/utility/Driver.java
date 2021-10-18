@@ -31,21 +31,18 @@ public class Driver {
                 case "chrome" :
                     WebDriverManager.chromedriver().setup();
                     obj = new ChromeDriver();
-                    obj.manage().window().maximize();
                     break;
                 case "firefox" :
                     WebDriverManager.firefoxdriver().setup();
                     obj = new FirefoxDriver();
-                    obj.manage().window().maximize();
                     break;
                 // other browsers omitted
                 default:
                     obj = null ;
                     System.out.println("UNKNOWN BROWSER TYPE!!! " + browserName);
             }
+            obj.manage().window().maximize();
             return obj ;
-
-
 
         }else{
 //            System.out.println("You have it just use existing one");
