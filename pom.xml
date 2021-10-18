@@ -87,10 +87,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
+ <!--  this is where we can tell sure fire plugin to run test in certain wai-->
                     <testFailureIgnore>true</testFailureIgnore>
                     <runOrder>Alphabetical</runOrder>
-                    <parallel>methods</parallel>
-                    <useUnlimitedThreads>true</useUnlimitedThreads>
+<!--                    <parallel>methods</parallel>        -->
+<!--                    <useUnlimitedThreads>true</useUnlimitedThreads>    -->
                     <includes>
                         <include>**/*TestRunner.java</include>
                         <!-- <include>**/*FailedTestRunner.java</include> -->
