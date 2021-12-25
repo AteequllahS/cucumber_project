@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
+/*
  * We wanted to have a class with that only return Single object
  * no matter how many time you asked for object
  * so we are creating this class with technic we learned from Singleton pattern
@@ -20,7 +20,7 @@ public class Driver {
 
     private Driver() {
     }
-    /**
+    /*
      * Return obj with only one WebDriver instance
      * @return same WebDriver if exists , new one if null
      */
@@ -54,7 +54,7 @@ public class Driver {
         }
         /*
          * Quitting the browser and setting the value of
-         * WebDriver instance to null because you can re-use already quit driver
+         * WebDriver instance to null because you can re-use already quitted driver
          */
     }
     public static void closeBrowser() {
